@@ -1,0 +1,6 @@
+# No required dependencies — Python 3.8+ stdlib only.
+#
+# Optional: install pyarrow to enable Parquet replay output
+# (--replay-format parquet).
+#
+# pyarrow>=10.0

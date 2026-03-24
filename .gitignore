@@ -1,0 +1,18 @@
+# Dev notes
+HANDOFF.md
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Replay output files
+*.jsonl
+*.parquet
+
+# Common editor/OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.venv/
+venv/
