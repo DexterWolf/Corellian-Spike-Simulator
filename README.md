@@ -44,7 +44,7 @@ python sabacc_sim.py --dice-mode classic --no-high-abs --no-suits --named-low-wi
   doubles mechanic)
 - `--no-high-abs` — disables the highest-|card| tiebreaker step
 - `--no-suits` — disables the suited tiebreaker step
-- `--named-low-wins` — lower-ranked named hand wins ties
+- `--named-low-wins` — lower-index (key) if same named hand wins ties
 - `--named-order galedge` — uses the Galaxy's Edge named hand ranking order
 
 ## Requirements
