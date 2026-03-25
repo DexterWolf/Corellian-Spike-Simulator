@@ -86,7 +86,7 @@ def is_sum_zero(hand: List[Card]) -> bool:
 
 # Named hand detectors (sum==0 required)
 def detect_pure_sabacc(hand: List[Card]) -> NamedResult:
-    """Exactly two Sylops (0, 0) — the rarest possible Sabacc."""
+    """Exactly two Sylops (0, 0)."""
     if hand_sum(hand) != 0:
         return NamedResult(False)
     card_values = sorted(hand_values(hand))
@@ -250,7 +250,7 @@ def detect_five_card_squad(hand: List[Card]) -> NamedResult:
     return NamedResult(True, "Five Card Squad", [a])
 
 def detect_rule_of_two(hand: List[Card]) -> NamedResult:
-    """4–5 cards: exactly two abs-value pairs (Sylops may be among the non-pair card)."""
+    """4–5 cards: exactly two abs-value pairs (No Sylop)."""
     if hand_sum(hand) != 0:
         return NamedResult(False)
 
